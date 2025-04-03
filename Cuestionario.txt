@@ -1,0 +1,28 @@
+parte 2: Git (5 preguntas)
+1. Inicializar un repositorio
+Pregunta 1:
+¿Qué comando se usa para iniciar un nuevo repositorio de Git en un proyecto local?
+Respuesta:
+ git init
+
+2. Clonar un repositorio
+Pregunta 2:
+¿Cómo clonarías un repositorio remoto desde GitHub si tuvieras la siguiente URL? 
+Respuesta:
+Git clone https://github.com/user/repo.git
+3. Hacer commit
+Pregunta 3:
+Explica los pasos para hacer un commit de los cambios en un archivo index.js.
+Respuesta:}
+Paso 1: git add index.js
+Paso 2: git commit -m "Descripción del cambio"
+4. Ramas (branches)
+Pregunta 4:
+¿Qué comando se usa para inicializar un repositorio local con una rama llamada feature-login ?
+Respuesta:
+Con: git checkout -b feature-login
+5. Subir cambios a GitHub
+Pregunta 5:
+¿Qué comando envía los commits locales a la rama main del repositorio remoto?
+Respuesta:
+git push origin main
