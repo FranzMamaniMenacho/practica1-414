@@ -1,0 +1,45 @@
+Practica 2
+Nombre: Franz Diovani Mamani Menacho  
+1.- Preguntas conceptuales 
+a)	¿Qué es el DOM y como se relaciona con HTML?
+R.- Es un interfaz de programación que representa un documento html o xml como un arbol de nodos
+
+b)	Explique la diferencia entre 
+- document.getElentByID() vs document.querySelector()
+R.- selecciona un objeto por el id y el otro selecciona el primer objeto que coincide con un selector css
+- textContent vs innerHTML
+R.- solo contiene texto no reconoce etiquetas HTML y contiene texto y reconoce etiquetas HTML
+c)	¿Paraque sirve addEventListener? Un ejemplo…
+           R.- le da la función a un evento 
+document.querySelector("button").addEventListener("click", () => {
+  alert("Botón clickeado");
+});
+
+d)	¿Qué métodos del DOM se usan para capturar valores de un formulario?
+R.- document.querySelector("input").value
+
+    -document.querySelector("input:checked").value
+    e) Explica cómo prevenir el envío por defecto de un formulario con        JavaScript
+R.- 
+document.querySelector("form").addEventListener("submit", (e) => {
+  e.preventDefault(); 
+});
+f) ¿Qué es el "almacenamiento en memoria" y en qué se diferencia de localStorage?
+R.- almacena datos temporalis y localStorage mantiene los datos en el navegador sin borrarlos 
+2.- Análisis de Código
+        Dado el siguiente código:
+ 
+ a) ¿Qué hace el código?
+ R.- El código selecciona un botón con el id="btn" y le asigna un         evento de clic
+Cuando se hace clic en el botón, actualiza el contenido del elemento <p id="mensaje"> con el texto "¡Botón presionado!"
+b) ¿Qué pasaría si cambiamos textContent por innerHTML?
+textContent solo muestra texto y al usar un innerHTML reconoce las etiquetas HTML en este caso muestra texto en negrita
+document.getElementById("mensaje").innerHTML = "<strong>¡Botón presionado!</strong>";
+3.- Análisis de Contenido
+Dado el siguiente formulario 
+
+a)	¿Qué hace el código al enviar el formulario?
+R.- cancela el envío automático del formulario después obtendrá el valor del imput(nombre) y lo agrega a un array que en este caso seria usuarios y por ultimo llamara a la función actualizarListaUsuarios() que actualiza el <ul> mostrando cada usuario como <li>
+b)	¿Cómo se simula la "persistencia de datos" aquí?
+R.- usando un array en memoria (const usuario=[]) para almacenar los nombres pero los datos se pierden al recargar la pagina 
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registrar usuarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>registro de usuarios</h1>
+        <form id="formulario-usuario">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="number" id="edad" placeholder="Edad" required>
+            <button type="submit">enviar</button>
+        </form>
+        <div id="error"></div>
+        <ul id="lista-usuarios"></ul>
+        <p id="total-usuarios">total: 0</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
